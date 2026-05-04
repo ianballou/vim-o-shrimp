@@ -44,9 +44,14 @@ let g:syntastic_quiet_messages = {'level': 'warnings'}
 " --- YouCompleteMe ---
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_show_diagnostics_ui = 0
-let g:ycm_filetype_specific_completion_to_disable = {
-      \ 'ruby': 1
-      \}
+let g:ycm_language_server = [
+      \   {
+      \     'name': 'ruby',
+      \     'cmdline': [ 'solargraph', 'stdio' ],
+      \     'filetypes': [ 'ruby' ],
+      \     'project_root_files': [ 'Gemfile', '.solargraph.yml' ]
+      \   }
+      \ ]
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " --- Airline ---
@@ -91,4 +96,4 @@ let python_highlight_all=1
 
 " --- Appearance ---
 syntax on
-colorscheme elflord
+colorscheme default
