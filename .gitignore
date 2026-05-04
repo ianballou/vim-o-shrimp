@@ -1,0 +1,2 @@
+# Don't commit plugins — they're installed by vim-plug
+.netrwhist
