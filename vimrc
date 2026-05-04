@@ -23,6 +23,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'rodjek/vim-puppet'
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
